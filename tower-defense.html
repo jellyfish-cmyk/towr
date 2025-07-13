@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defense</title>
+    <link rel="stylesheet" href="tower-defense.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Tower Defense</h1>
+            <div class="stats">
+                <div class="stat">
+                    <span class="label">Money:</span>
+                    <span class="value" id="money">100</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Lives:</span>
+                    <span class="value" id="lives">20</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Wave:</span>
+                    <span class="value" id="wave">1</span>
+                </div>
+                <div class="stat">
+                    <span class="label">Score:</span>
+                    <span class="value" id="score">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <canvas id="gameCanvas" width="800" height="400"></canvas>
+            
+            <div class="sidebar">
+                <div class="tower-selection">
+                    <h3>Build Towers</h3>
+                    <div class="tower-options">
+                        <div class="tower-option" data-tower="basic">
+                            <div class="tower-icon basic-tower"></div>
+                            <div class="tower-info">
+                                <div class="tower-name">Basic Tower</div>
+                                <div class="tower-cost">$50</div>
+                            </div>
+                        </div>
+                        <div class="tower-option" data-tower="sniper">
+                            <div class="tower-icon sniper-tower"></div>
+                            <div class="tower-info">
+                                <div class="tower-name">Sniper Tower</div>
+                                <div class="tower-cost">$100</div>
+                            </div>
+                        </div>
+                        <div class="tower-option" data-tower="splash">
+                            <div class="tower-icon splash-tower"></div>
+                            <div class="tower-info">
+                                <div class="tower-name">Splash Tower</div>
+                                <div class="tower-cost">$150</div>
+                            </div>
+                        </div>
+                        <div class="tower-option" data-tower="freeze">
+                            <div class="tower-icon freeze-tower"></div>
+                            <div class="tower-info">
+                                <div class="tower-name">Freeze Tower</div>
+                                <div class="tower-cost">$200</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inventory-section">
+                    <h3>Tower Inventory</h3>
+                    <div class="inventory-towers" id="inventory-towers">
+                        <div class="inventory-empty">No towers in inventory</div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="startWave" class="btn btn-primary">Start Wave</button>
+                    <button id="pauseGame" class="btn btn-secondary">Pause</button>
+                    <button id="restartGame" class="btn btn-danger">Restart</button>
+                </div>
+
+                <div class="wave-info">
+                    <h3>Wave Info</h3>
+                    <div id="enemies-remaining">Enemies: 0</div>
+                    <div id="next-wave">Next wave in: <span id="wave-timer">0</span>s</div>
+                </div>
+
+                <div class="tower-stats">
+                    <h3>Tower Statistics</h3>
+                    <div id="tower-stats-display">
+                        <div class="stat-item">No towers placed yet</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>How to Play:</h3>
+            <ul>
+                <li>Click on a tower type, then click on the path to place it</li>
+                <li>Towers can only be placed on the enemy path</li>
+                <li>Towers automatically attack nearby enemies</li>
+                <li>Prevent enemies from reaching the end of the path</li>
+                <li>Earn money by defeating enemies</li>
+                <li>Buy better towers to survive stronger waves</li>
+                <li>When the layout changes, towers not on the new path go to inventory</li>
+                <li>Click on inventory towers to place them back on the path</li>
+                <li>Watch out! Enemies can destroy your towers!</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="tower-defense.js"></script>
+</body>
+</html> 

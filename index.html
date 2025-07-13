@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defense - Epic Strategy Game</title>
+    <link rel="stylesheet" href="website.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tower-observation"></i>
+                <span>Tower Defense</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <li><a href="#download">Play Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Tower Defense</span>
+                    <br>Epic Strategy Game
+                </h1>
+                <p class="hero-subtitle">
+                    Defend your territory against waves of enemies in this thrilling tower defense game. 
+                    Place strategic towers, manage resources, and survive endless waves of increasingly difficult enemies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="tower-defense.html" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Play Now
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="game-preview">
+                    <div class="game-screen">
+                        <div class="game-header">
+                            <div class="stat-bar">
+                                <span class="stat">💰 150</span>
+                                <span class="stat">❤️ 20</span>
+                                <span class="stat">🌊 3</span>
+                            </div>
+                        </div>
+                        <div class="game-board">
+                            <div class="tower basic-tower"></div>
+                            <div class="tower sniper-tower"></div>
+                            <div class="tower splash-tower"></div>
+                            <div class="enemy basic-enemy"></div>
+                            <div class="enemy fast-enemy"></div>
+                            <div class="enemy tank-enemy"></div>
+                            <div class="projectile"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Game Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tower-observation"></i>
+                    </div>
+                    <h3>4 Unique Towers</h3>
+                    <p>Basic, Sniper, Splash, and Freeze towers each with unique abilities and strategies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dragon"></i>
+                    </div>
+                    <h3>4 Enemy Types</h3>
+                    <p>Face basic, fast, tank, and boss enemies with different health and speed characteristics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3>Wave System</h3>
+                    <p>Progressive difficulty with increasingly challenging waves and stronger enemies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Resource Management</h3>
+                    <p>Earn money by defeating enemies and spend wisely on strategic tower placement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Statistics Tracking</h3>
+                    <p>Monitor tower performance with detailed kill counts and damage statistics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Play seamlessly on desktop, tablet, or mobile devices with optimized controls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gameplay Section -->
+    <section id="gameplay" class="gameplay">
+        <div class="container">
+            <h2 class="section-title">How to Play</h2>
+            <div class="gameplay-content">
+                <div class="gameplay-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Choose Your Tower</h3>
+                            <p>Select from 4 different tower types, each with unique abilities and costs.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Place on Path</h3>
+                            <p>Click on the enemy path to place towers. Green preview means valid placement.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Start the Wave</h3>
+                            <p>Click "Start Wave" to begin enemy spawning and watch your towers defend.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Survive & Upgrade</h3>
+                            <p>Earn money, buy better towers, and survive as many waves as possible!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplay-visual">
+                    <div class="tower-showcase">
+                        <div class="tower-item">
+                            <div class="tower-preview basic-tower"></div>
+                            <h4>Basic Tower</h4>
+                            <p>Cost: $50 | Balanced damage and fire rate</p>
+                        </div>
+                        <div class="tower-item">
+                            <div class="tower-preview sniper-tower"></div>
+                            <h4>Sniper Tower</h4>
+                            <p>Cost: $100 | High damage, long range</p>
+                        </div>
+                        <div class="tower-item">
+                            <div class="tower-preview splash-tower"></div>
+                            <h4>Splash Tower</h4>
+                            <p>Cost: $150 | Area damage to multiple enemies</p>
+                        </div>
+                        <div class="tower-item">
+                            <div class="tower-preview freeze-tower"></div>
+                            <h4>Freeze Tower</h4>
+                            <p>Cost: $200 | Slows enemies and deals damage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title">Ready to Play?</h2>
+            <p class="download-subtitle">Start defending your territory now!</p>
+            <div class="download-options">
+                <a href="tower-defense.html" class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Play Online</h3>
+                    <p>Play directly in your browser - no download required!</p>
+                    <div class="download-btn">Play Now</div>
+                </a>
+                <a href="#" class="download-card" onclick="downloadGame()">
+                    <div class="download-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Download Game</h3>
+                    <p>Download all files to play offline</p>
+                    <div class="download-btn">Download ZIP</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tower Defense</h3>
+                    <p>An epic strategy game built with HTML5, CSS3, and JavaScript.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="tower-defense.html">Play Game</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#gameplay">How to Play</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Game Files</h4>
+                    <ul>
+                        <li><a href="tower-defense.html">tower-defense.html</a></li>
+                        <li><a href="tower-defense.css">tower-defense.css</a></li>
+                        <li><a href="tower-defense.js">tower-defense.js</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tower Defense Game. Built with ❤️ using modern web technologies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="website.js"></script>
+</body>
+</html> 
